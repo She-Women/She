@@ -1,0 +1,388 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*===== Colors =====*/
+    --hue-color:242;
+
+    /* HSL Color Mode */
+    --skin-color: ##47B5FF;
+    --title-color: hsl(var(--hue-color), 8%, 95%);
+    --text-color: hsl(var(--hue-color), 8%, 85%);
+    --body-color: hsl(var(--hue-color), 19%, 5%);
+    --box-color: hsl(var(--hue-color), 14%, 10%);
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 38%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 26%);
+
+    /*===== Font and Typography =====*/
+    --body-font: 'Poppins', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*===== Font Weight =====*/
+    --font-medium: 500;
+    --font-bold: 600;
+
+    /*===== Margenes Bottom =====*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /*===== Z Index =====*/
+    --z-fixed: 10;
+    --z-modal: 100;
+}
+
+/* Responsive Typography */
+@media screen and (max-width: 1024px) {
+    :root {
+        --biggest-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+}
+
+
+
+body{
+    font-family: "Montserrat";
+    text-align: center;
+}
+h1,h2,h3,h4.h5,h6{
+    font-family:"Montserrat" ;
+}
+
+p{
+    font-weight: 500;
+}
+.you{
+ color: #DFF6FF;
+ font-size: 2rem;
+ text-align: left;
+ padding-left: 30px;
+}
+/* headings */
+.big-heading{
+    font-family:"Ubuntu";
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 30px;
+
+}
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+/* containers */
+
+.container-fluid{
+    padding:5% 7%;
+    font-weight: 500;
+    font-size: medium;
+}
+
+/* sections */
+.colored-section{
+    background-color: #47B5FF;
+    color: white;
+    padding: 0px 0px 50px 0px;
+    margin: 0;
+}
+.call-section{
+    background-color: #47B5FF;
+    color: white;
+    padding: 0px 0px 3px 0px;
+    margin: 0;
+}
+/* navigation bar */
+
+.navbar{
+    padding-bottom: 0 0 4.5rem;
+}
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+}
+
+/* download buttons */
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* title section */
+
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: center;
+}
+
+/* title Image */
+.title-image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-right: 35px;
+    float: right;
+    margin-left: 0%;
+}
+ 
+/* features section */
+#features{
+    position: relative;
+
+}
+.feature-title{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.feature-box{
+    
+    padding: 4.5%;
+}
+
+.icon{
+    color: black;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #1363DF;
+}
+#press{
+    background-color: white;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px ;
+}
+
+/* pricing section */
+#pricing{
+    padding: 100px;
+
+}
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+.pricing-column{
+    padding: 3% 2%;
+}
+@media(max-width:1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+.social-icon{
+    margin: 30px 30px;
+}
+.wings-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+.girl1-img{
+    width: 45%;
+    float: left;
+    margin-right: 30px;
+    border-radius: 30%;
+
+}
+.girl2-img{
+    width: 45%;
+    float:right ;
+    margin-left: 30px;
+    border-radius: 30%;
+}
+.wings1{
+    padding-top: 30px;
+    font-weight: 800;
+    font-family: monospace;
+    color: black;
+    font-size: 40px;
+}
+.image-thumbnail-1{
+    height: 50%;
+    width:50%;
+    border-radius: 10px;
+}
+.aa{
+    background-color: #B9D7EA;
+}
+
+.me{
+text-align: left;
+}
+
+.this-section{
+    background-color: #47B5FF;
+    text-align: center;
+}
+.ccc{
+    width:100%;
+    height:100%;
+}
+.call_img{
+    border-radius: 1rem;
+    padding-bottom: 5px;
+}
+.home__social{
+    position: absolute;
+    left: 1rem ;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    column-gap: 3.5rem;
+}
+.home__social-follow{
+    font-weight: var(--font-medium);
+    position: relative;
+    font-size: 1.8rem;
+}
+.home__social-follow::after{
+    content:'' ;
+    position: absolute;
+    width: 1rem;
+    height: 2px;
+    background-color: var(--text-color);
+    right: -45%;
+    top: 50%;
+   
+}
+.home__social-links{
+    display: inline-flex;
+    column-gap: 1rem;
+}
+.home__social-link{
+    font-size: 1.8rem;
+    color: black;
+    transition: .3s;
+}
+.home__social-link:hover{
+    transform: translateY(.25rem);
+    color:white;
+}
+
+/*===== Testimonial Section =====*/
+@media screen and (min-width: 992px){
+    .testimonials__container{
+        width: 750px;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+.testimonial__card{
+    background-color: #DFF6FF;
+    padding: 1.8rem 2rem;
+    border-radius:.5rem ;
+    margin-bottom: 3rem;
+}
+.testimonial__quote{
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: #1363DF;
+    margin-bottom: var(--mb-1);
+}
+.testimonial__description{
+    margin-bottom: var(--mb-1);
+    color: black;
+    font-weight: 700; 
+    font-size: medium;
+}
+.testimonial__date{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-2);
+    color: black;
+}
+.testimonial__profile{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+.testimonial__profile-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 3rem;
+}
+.testimonial__profile-data{
+    display: flex;
+    flex-direction: column;
+    row-gap: .4rem;
+}
+.testimonial__profile-name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    color: black;
+}
+.testimonial__profile-detail{
+    font-size: var(--small-font-size);
+}
+/* Swiper Class */
+.swiper-pagination-bullet{
+    background-color: var(--box-color);
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--skin-color);
+}
+
+.we__think{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+}
+@media screen and (max-width: 350px) {
+    .home__social-follow{
+        bottom: 0;
+    }
+}
+
+.footer-base{
+    cursor: pointer;
+    color:black;
+    text-decoration: none;
+
+}
+.footer-base:hover{
+    color: black;
+}
+.emer{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+.emer:hover{
+    color: white;
+}
