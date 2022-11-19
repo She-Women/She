@@ -364,33 +364,33 @@
       window.location = "index.html";
     }
 
-    // function yourlink() {
+    function yourlink() {
 
-    //   var locs = ['emergency.html', 'tel:+91-8076188164']
+      var locs = ['emergency.html', 'tel:+91-8076188164']
 
-    //   for (let i = 0; i < locs.length; i++) {
-    //     window.open(locs[i])
-    //   }
-    // };
+      for (let i = 0; i < locs.length; i++) {
+        window.open(locs[i])
+      }
+    };
 
 
-    const accountSid = process.env.TWILIO_ACCOUNT_SID;
-    const authToken = process.env.TWILIO_AUTH_TOKEN;
-    const client = require('twilio')(accountSid, authToken);
+    // const accountSid = process.env.TWILIO_ACCOUNT_SID;
+    // const authToken = process.env.TWILIO_AUTH_TOKEN;
+    // const client = require('twilio')(accountSid, authToken);
 
-    const numbers = ['+917303434469', '+917339904913', '+918076188164']; // An array of the numbers you want to make calls to.
+    // const numbers = ['+917303434469', '+917339904913', '+918076188164']; // An array of the numbers you want to make calls to.
 
-    async function yourlink() {
-      numbers.forEach(async (number) => {
-        await client.calls
-          .create({
-            url: 'http://demo.twilio.com/docs/voice.xml',
-            to: number,
-            from: '+14752314735'
-          })
-          .then(call => console.log(call.sid));
-      });
-    }
+    // async function yourlink() {
+    //   numbers.forEach(async (number) => {
+    //     await client.calls
+    //       .create({
+    //         url: 'http://demo.twilio.com/docs/voice.xml',
+    //         to: number,
+    //         from: '+14752314735'
+    //       })
+    //       .then(call => console.log(call.sid));
+    //   });
+    // }
 
     //------------------------------------------WINDOWS LOADS---------------------------------------------------//
 
